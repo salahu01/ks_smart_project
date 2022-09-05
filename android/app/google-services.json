@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "879484682674",
+    "project_id": "ks-smart-solution",
+    "storage_bucket": "ks-smart-solution.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879484682674:android:ddf972a32c9156458264ab",
+        "android_client_info": {
+          "package_name": "com.example.ks_smart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879484682674-vfdd4hml6vb9amoukg9mti1ae9trjcvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAQO0HVd7xMFcig2AiRWvEfYwXD27BSPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879484682674-vfdd4hml6vb9amoukg9mti1ae9trjcvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

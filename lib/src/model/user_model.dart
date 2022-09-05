@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 class UserModel {
   String? userName;
   String? password;
@@ -5,10 +7,10 @@ class UserModel {
 
   UserModel({this.userName, this.password, this.dob});
 
-  UserModel.fromJson(Map<String, dynamic> json) {
-    userName = json['name'];
-    password = json['password'];
-    dob = json['dob'];
+  UserModel.fromResponse(DocumentSnapshot<Object?> response) {
+    userName = response.get('name');
+    password = response.get('password');
+    dob = response.get('dob');
   }
 
   Map<String, dynamic> toJson(UserModel userModel) {

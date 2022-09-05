@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ks_smart/src/config/light_theme.dart';
 import 'package:ks_smart/src/features/admin/create_user/cubit/cubit.dart';
-import 'package:ks_smart/src/widgets/widgets/appbar.dart';
 
 import '../../../../widgets/widgets.dart';
 

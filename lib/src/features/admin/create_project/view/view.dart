@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ks_smart/src/widgets/widgets.dart';
-import 'package:ks_smart/src/widgets/widgets/appbar.dart';
 
 import '../../../../config/light_theme.dart';
 

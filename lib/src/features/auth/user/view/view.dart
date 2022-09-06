@@ -7,9 +7,9 @@ import '../user.dart';
 
 class AuthUserView extends StatelessWidget {
   AuthUserView({Key? key}) : super(key: key);
-  final TextEditingController userName = TextEditingController(text: 'salahu');
-  final TextEditingController password = TextEditingController(text: '123456');
-  final TextEditingController dob = TextEditingController(text: '1234567890');
+  final TextEditingController userName = TextEditingController();
+  final TextEditingController password = TextEditingController();
+  final TextEditingController dob = TextEditingController();
 
   @override
   Widget build(BuildContext context) {

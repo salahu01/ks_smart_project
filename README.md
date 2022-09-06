@@ -12,6 +12,34 @@ apks for diffrent platforms
 
 * [app-x86_64](https://drive.google.com/file/d/1bniHGiVwLhMO4Z8Iayxkd-ZpGJ83dgvz/view?usp=sharing)
 
+## After Download
+
+*Sample AdminCredential:*
+
+emial
+```
+Admin@kssmart.co
+```
+password
+```
+123456
+```
+
+*Sample UserCredential:*
+
+name
+```
+salahu
+```
+password
+```
+123456
+```
+dob
+```
+12/12/2022
+```
+
 
 ## How to Use 
 

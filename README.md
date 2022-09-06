@@ -4,13 +4,13 @@
 
 apks for diffrent platforms
 
-* [arm64-v8a](https://drive.google.com/file/d/1zWNTWfIefXdlo16Zgw6_UEtzUHVRJ-O2/view?usp=sharing)
+* [arm64-v8a](https://drive.google.com/file/d/15ic421u6AxFHgU9pxdyBYIJyRILxyNzy/view?usp=sharing)
 
 
-* [armeabi-v7a](https://drive.google.com/file/d/1NCHNAAYbaO7OuHt_qYISy3bRr46QIYgl/view?usp=sharing)
+* [armeabi-v7a](https://drive.google.com/file/d/16uQrLPxonnZYiBmSBwv4aFJ-5iswNBik/view?usp=sharing)
 
 
-* [app-x86_64](https://drive.google.com/file/d/1bniHGiVwLhMO4Z8Iayxkd-ZpGJ83dgvz/view?usp=sharing)
+* [app-x86_64](https://drive.google.com/file/d/18IW2tM9vh-235HETzD0sts_NvoA9QDr9/view?usp=sharing)
 
 ## After Download
 

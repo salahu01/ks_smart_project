@@ -28,6 +28,11 @@ class AdminHomeView extends StatelessWidget {
                 'Create Project',
                 context,
               ),
+              selectOption(
+                AdminRadioOptions.logOut,
+                'Log Out',
+                context,
+              ),
               const SizedBox(height: 30),
               button(
                 text: 'Submit',

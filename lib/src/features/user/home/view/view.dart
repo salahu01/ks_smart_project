@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:ks_smart/src/model/user_model.dart';
 import 'package:ks_smart/src/utils/constants.dart';
 
 import '../../../../config/light_theme.dart';
@@ -7,7 +8,8 @@ import '../../../../widgets/widgets.dart';
 import '../cubit/cubit.dart';
 
 class UserHomeView extends StatelessWidget {
-  const UserHomeView({Key? key}) : super(key: key);
+  const UserHomeView({Key? key,required this.userModel}) : super(key: key);
+  final UserModel userModel;
 
   @override
   Widget build(BuildContext context) {
@@ -28,10 +30,15 @@ class UserHomeView extends StatelessWidget {
                 'My Project',
                 context,
               ),
+              selectOption(
+                UserRadioOptions.logOut,
+                'Log Out',
+                context,
+              ),
               const SizedBox(height: 30),
               button(
                 text: 'Submit',
-                onTap: () => context.read<UserHomeCubit>().submitAction(context),
+                onTap: () => context.read<UserHomeCubit>().submitAction(context,userModel),
               ),
             ],
           ),

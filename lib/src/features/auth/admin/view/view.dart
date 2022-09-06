@@ -6,8 +6,9 @@ import 'package:ks_smart/src/config/light_theme.dart';
 
 class AuthAdminView extends StatelessWidget {
   AuthAdminView({Key? key}) : super(key: key);
-  final TextEditingController email = TextEditingController(text: '');
-  final TextEditingController password = TextEditingController(text: '');
+  final TextEditingController email =
+      TextEditingController(text: 'Admin@kssmart.co');
+  final TextEditingController password = TextEditingController(text: '123456');
 
   @override
   Widget build(BuildContext context) {

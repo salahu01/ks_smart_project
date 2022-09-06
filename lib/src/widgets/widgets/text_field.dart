@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:ks_smart/src/config/light_theme.dart';
 
 class CustomTextField extends StatelessWidget {
-  CustomTextField({Key? key, required this.label, this.controller,this.validator})
+  CustomTextField({Key? key, required this.label, this.controller,this.validator,this.enabled})
       : super(key: key);
   final _formKey = GlobalKey<FormState>();
   final String label;
   final TextEditingController? controller;
+  final bool? enabled;
   final String? Function(String?)? validator;
   @override
   Widget build(BuildContext context) {
@@ -17,6 +18,7 @@ class CustomTextField extends StatelessWidget {
       child: Form(
         key: _formKey,
         child: TextFormField(
+          enabled: enabled ?? true,
           controller: controller,
           maxLines: null,
           decoration: InputDecoration(

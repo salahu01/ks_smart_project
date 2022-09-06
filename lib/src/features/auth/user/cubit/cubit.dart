@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:ks_smart/src/features/user/home/home.dart';
 import 'package:ks_smart/src/model/user_model.dart';
-import 'package:ks_smart/src/services/firebase/create_user.dart';
+import 'package:ks_smart/src/services/firebase/firebase.dart';
 
 class AuthUserCubit extends Cubit<bool> {
   AuthUserCubit() : super(false);
@@ -27,12 +27,16 @@ class AuthUserCubit extends Cubit<bool> {
       required String dob,
       required context}) async {
     loadingScreen(true);
-    final response = await Firebase().checkUser(
-        UserModel(dob: dob, userName: userName, password: password), userName);
+    UserModel userModel =
+        UserModel(dob: dob, userName: userName, password: password);
+    final response = await Firebase().checkUser(userModel, userName);
     if (response == 'Success') {
       loadingScreen(false);
       Navigator.of(context).pushAndRemoveUntil(
-          MaterialPageRoute(builder: (context) => const UserHomeView()),
+          MaterialPageRoute(
+              builder: (context) => UserHomeView(
+                    userModel: userModel,
+                  )),
           (route) => false);
     } else {
       loadingScreen(false);
@@ -41,7 +45,4 @@ class AuthUserCubit extends Cubit<bool> {
     }
   }
 
-  bool storeData() {
-    return true;
-  }
 }

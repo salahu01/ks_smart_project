@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:ks_smart/src/features/admin/create_project/create_admin.dart';
 import 'package:ks_smart/src/features/admin/home/home.dart';
 import 'package:ks_smart/src/features/auth/admin/admin.dart';
 import 'package:ks_smart/src/features/auth/home/home.dart';
@@ -39,11 +40,14 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => AuthHomeCubit(),
-        )
+        ),
+        BlocProvider(
+          create: (context) => CreateProjectCubit(),
+        ),
       ],
       child:const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: AuthHomeView(),
+        home: AuthHomeView(), 
       ),
     );
   }

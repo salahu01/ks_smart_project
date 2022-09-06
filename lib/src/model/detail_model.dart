@@ -12,6 +12,8 @@ class DetailsModel {
     company =
         json['company'] != null ? Company.fromJson(json['company']) : null;
   }
+  List<DetailsModel> detailModelListFromJson(List<dynamic> json) =>
+    List<DetailsModel>.from(json.map((x) => DetailsModel.fromJson(x)));
 }
 
 class Address {

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ks_smart/src/features/admin/create_project/view/view.dart';
 import 'package:ks_smart/src/features/admin/create_user/create_user.dart';
+import 'package:ks_smart/src/features/auth/home/home.dart';
 
 import '../../../../utils/constants.dart';
 
@@ -24,6 +25,11 @@ class AdminHomeCubit extends Cubit<AdminRadioOptions> {
           builder: (context) => const CreateProjectView(),
         ),
       );
+    } else if (state == AdminRadioOptions.logOut) {
+      Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (context) => const AuthHomeView()),
+          (route) => false);
     } else {
       ScaffoldMessenger.of(context)
           .showSnackBar(const SnackBar(content: Text('Select Any Options')));

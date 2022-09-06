@@ -1,5 +1,5 @@
-enum AdminRadioOptions { createUser, createProject, initialState }
+enum AdminRadioOptions { createUser, createProject, logOut,initialState }
 
-enum UserRadioOptions { myBio, myProject, initialState }
+enum UserRadioOptions { myBio, myProject, initialState , logOut}
 
 enum LoginOptions { admin, user, initialState }

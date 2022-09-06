@@ -20,7 +20,7 @@ apks for diffrent platforms
 Download or clone this repo by using the link below:
 
 ```
-https://github.com/salahu01/crocs-flutter-app-user-.git
+https://github.com/salahu01/ks_smart_project.git
 
 ```
 

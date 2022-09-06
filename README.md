@@ -4,13 +4,13 @@
 
 apks for diffrent platforms
 
-* [arm64-v8a]()
+* [arm64-v8a](https://drive.google.com/file/d/1zWNTWfIefXdlo16Zgw6_UEtzUHVRJ-O2/view?usp=sharing)
 
 
-* [armeabi-v7a]()
+* [armeabi-v7a](https://drive.google.com/file/d/1NCHNAAYbaO7OuHt_qYISy3bRr46QIYgl/view?usp=sharing)
 
 
-* [app-x86_64]()
+* [app-x86_64](https://drive.google.com/file/d/1bniHGiVwLhMO4Z8Iayxkd-ZpGJ83dgvz/view?usp=sharing)
 
 
 ## How to Use 
